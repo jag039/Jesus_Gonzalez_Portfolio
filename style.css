@@ -22,3 +22,8 @@
   .btn-group button:hover {
     background-color: #0c4599;
   }
+
+  body  {
+    background-image: url("background.jpg");
+    background-color: #ffffff;
+  }
