@@ -1,3 +1,9 @@
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .btn-group button {
     background-color: #104aa1;
     border: 1px solid blue; /* Green border */
@@ -5,25 +11,76 @@
     padding: 10px 24px; /* Some padding */
     cursor: crosshair; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
+
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
-  .btn-group button:not(:last-child) {
+.btn-group button:not(:last-child) {
     border-right: none; /* Prevent double borders */
   }
   
-  /* Clear floats (clearfix hack) */
-  .btn-group:after {
+/* Clear floats (clearfix hack) */
+.btn-group:after {
     content: "";
     clear: both;
     display: table;
-  }
+}
   
-  /* Add a background color on hover */
-  .btn-group button:hover {
-    background-color: #538ce2;
-  }
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #538ce2;
+}
 
-  body  {
-    background-image: url("background.jpg");
+/*First Section-----------------------------------------*/
+body  {
+    background-image: url("pictures/background.jpg");
     background-color: #ffffff;
-  }
+
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 120%;
+}
+
+.aboutMe{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#info{
+  width: 95%
+
+}
+
+#selfPic{
+  padding-top: 5%;
+  width: 100%;
+  
+}
+/*-------------------------------------------------------*/
+
+/*EXPERIENCE section*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #7fb4ea;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*-------------------------------------------------------*/
