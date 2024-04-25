@@ -1,0 +1,27 @@
+.tipCalculator{
+    border-style: solid;
+    border-color: black;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;    
+}
+
+#head{
+    text-align: center;
+}
+
+label, input[type="text"] {
+    display: block;
+}
+
+#billNum, #tip, .calc{
+    width: 100%
+}
+
+
+
+.calc:hover {
+    background-color: rgb(73, 234, 73);
+
+  }

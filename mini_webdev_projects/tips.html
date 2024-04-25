@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="tips_style.css">
+    <script src="tips_jc.js"></script>
+</head>
+<body>
+    <div class="tipCalculator">
+        <h1 id="head">Tip Calculator</h1>
+        <p id="info">
+            Enter the bill amount and tip percentage to calcualte 
+            the total
+        </p>
+        <form class="total">
+            <form>
+                <label for="billNum">Enter Bill Amount:</label>
+                <input type="text" id="billNum" name="billNum">
+            </form>
+            <form>
+                <label for="tip">Enter tip Percentage:</label>
+                <input type="text" id="tip" name="tip">
+            </form>
+            <form>
+                <button class="calc" type="button" onclick="calculateTotal()"> Press to Calculate</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </form>
+</body>
+</html>
