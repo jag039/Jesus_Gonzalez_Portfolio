@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main_script.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
     </style>
@@ -20,5 +21,31 @@
             <button style="width:50%">Experience</button>
         </a>
     </div>
+<!--MAKE A SEPERATE PAGE FOR ALL HTML PROJECTS------>
+    <h1>Project1</h1>
+    <p>Make a seperate page called HTML projects where you can
+        put all the projects
+    </p>
+    <div id="calc">
+        <!-- Content from included.html will be injected here -->
+    </div>
+    <script> 
+        fetch('mini_webdev_projects/tips.html')
+            .then(response => response.text())
+            .then(html => {
+                // Inject the fetched content into the div
+                document.getElementById('calc').innerHTML = html;
+                // Dynamically load JavaScript file
+                return loadScript('mini_webdev_projects/tips_jc.js');
+            })
+            .then(() => {
+                // Dynamically load CSS file
+                loadCSS('mini_webdev_projects/tips_style.css');
+            })
+            .catch(error => console.error('Error fetching/injecting content:', error));
+    </script>
+<!--------------------------------------------------->
+
+
 </body> 
 </html>
