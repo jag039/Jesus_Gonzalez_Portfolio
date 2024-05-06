@@ -1,31 +1,53 @@
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .task{
     border-style: solid;
     border-color: black;
-    width: 90%;
+    width: 100%;
+    background-color: rgb(212, 229, 212);
+    border-radius: 10px;
+    min-height: 200px;
 }
 
 .top{
+    text-align: center;
+}
+
+.middle{
+    text-align: center;
+    position: relative;
+}
+
+.task-entry{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
 }
 
-#subtract, #add{
-    align-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
+#txt{
+    max-width: 100%;
+    overflow: hidden;
 }
 
-#taskform{
-    width: 90%;
+
+
+
+.popup{
+    display: none;
+    background-color: aliceblue;
+    border-color: black;
+    border-style: solid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
-#newTaskInput{
-    width: 90%;
+
+
+#add{
+    display: block;
+    margin: auto;
+    width: 20%;
+    margin-bottom: 1rem;
 }

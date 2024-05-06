@@ -2,40 +2,35 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="task_style.css">
-    <script src=""></script>
+    <script src="tasks.js"></script>
 </head>
 <body>
     <div class="task">
+
+
+
         <div class="top">
-            <button id="subtract">-</button>
-            <h1 id="header">Task List</h1>
-            <button id="add">+</button>
+            <h1 id="header">Task list</h1>
         </div>
+        <div class="middle">
+            <div class="popup" id="popup">
+                <p>Enter Task</p> 
+                <form id="taskTitle">
+                    <input type="text" id="newTaskTitle" placeholder="Task Title...">
+                </form>
+                <form id="taskInfo">
+                    <input type="text" id="newTaskInfo" placeholder="Task info...">
+                </form>
+                <button id="cancel" type="button" onclick="closePopup()">Cancel</button>
+                <button id="Submit" type="button" onclick="addToList()">Submit</button>
+            </div>
+            <div id="task-list"></div>
+
+        </div>
+
         <div class="bottom">
-            <form id="tasks">
-                
-            </form>
-
-
-            <ul id="tasks">
-                <li>
-                    <form id="taskForm">
-                        <input type="text" id="newTaskInput" placeholder="Enter task">
-                    </form>
-                </li>
-                <li>
-                    <form id="taskForm">
-                        <input type="text" id="newTaskInput" placeholder="Enter task">
-                    </form>
-                </li>
-                <li>
-                    <form id="taskForm">
-                        <input type="text" id="newTaskInput" placeholder="Enter task">
-                    </form>
-                </li>
-                <li>MORE</li>
-            </ul>
-        </div>    
+            <button id="add" type="button" onclick="popupFunc()">+</button>
+        </div>
     </div>
 </body>
 </html>

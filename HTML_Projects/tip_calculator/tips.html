@@ -11,20 +11,20 @@
             Enter the bill amount and tip percentage to calcualte 
             the total
         </p>
-        <form class="total">
-            <form>
+        <div class="total">
+            <form id="entBill">
                 <label for="billNum">Enter Bill Amount:</label>
-                <input type="text" id="billNum" name="billNum">
+                <input type="text" id="billNum" placeholder="">
             </form>
-            <form>
+            <form id="entTip">
                 <label for="tip">Enter tip Percentage:</label>
                 <input type="text" id="tip" name="tip">
             </form>
-            <form>
+            <form id="calc">
                 <button class="calc" type="button" onclick="calculateTotal()"> Press to Calculate</button>
             </form>
             <div id="result"></div>
         </div>
-    </form>
+    </div>
 </body>
 </html>

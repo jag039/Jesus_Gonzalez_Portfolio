@@ -43,6 +43,33 @@
     </script>
 <!--------------------------------------------------->
     <h1>Project 2</h1>
+    <p>This is a task list. I was trying to make it functional apart of a
+         larger project that I can use later on possibly. This is why when you press
+        add task item ( the plus button ) there is a popup menu to add the task item. 
+        It would represent what would happen if this task list were apart of a bigger
+        operation going on in a browser page.
+    </p>
+    <p style="font-style:italic;">
+        WORK IN PROGRESS, STILL NEED TO FIX ADD item, ANd allow delete item
+    </p>
+    <div id="tasks">
+        <!-- Content from included.html will be injected here -->
+    </div>
+    <script> 
+        fetch('HTML_Projects/task_list/task_list.html')
+            .then(response => response.text())
+            .then(html => {
+                // Inject the fetched content into the div
+                document.getElementById('tasks').innerHTML = html;
+                // Dynamically load JavaScript file
+                return loadScript('HTML_Projects/task_list/tasks.js');
+            })
+            .then(() => {
+                // Dynamically load CSS file
+                loadCSS('HTML_Projects/task_list/task_style.css');
+            })
+            .catch(error => console.error('Error fetching/injecting content:', error));
+    </script>
 
 
 </body> 
