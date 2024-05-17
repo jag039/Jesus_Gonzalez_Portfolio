@@ -52,7 +52,7 @@ while running:
             bullet = Bullet((player.rect.x, player.rect.y + 15),
                             pygame.mouse.get_pos())
             projectiles.add(bullet)
-            asteroid = Obstacle((player.rect.x, player.rect.y + 15))
+            asteroid = Obstacle((player.rect.x, player.rect.y), screen)
             asteroids.add(asteroid)
 
     dt = clock.tick(60)/1000  # limits FPS to 60
